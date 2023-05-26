@@ -23,4 +23,4 @@ def stock_picker(prices)
 
 
 
-p stock_picker([1,2,4,2,55,23,43,56,89,100]) 
+p stock_picker([2,2,4,1,55,23,43,56,89,100]) 

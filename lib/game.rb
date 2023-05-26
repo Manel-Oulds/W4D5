@@ -15,6 +15,7 @@ class TOH
     # end
 
     def move(origin, destiny)
+        raise"Invalid arguments" unless [origin,destiny].all?{|x| x.between?(1,3)}
         hash = { 1 => @array1, 2 => @array2, 3 => @array3 }
         if !hash[origin].empty?
             value = hash[origin].shift
@@ -45,5 +46,5 @@ class TOH
     end
 end
 
-game = TOH.new
-game.run
+# game = TOH.new
+# game.run
